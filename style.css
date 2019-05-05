@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: "open sans", sans-serif;
+    width: 75%;
+    margin: auto;
+}
+nav{
+    border: solid black 2px;
+    background-color: grey;
+    height: 40px;
+    text-decoration: underline;
+    position: fixed;
+    width: 75%;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav li{
+    display: inline;
+    margin-right: 5px;
+}
+
+header{
+    border: solid black 2px;
+    background-color: grey;
+    padding: 12%;
+    
+}
+
+.bio{
+    border: solid black 2px;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+.projects{
+    border: solid black 2px;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+.skills{
+    border: solid black 2px;
+    background-color: grey;
+    margin-top: 20px;
+}
+
+footer{
+    border: solid black 2px;
+    background-color: grey;
+    margin-top: 20px;
+}
