@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Samuel Hemby</title>
 </head>
 <body>
     <nav role='nav'>
+        <img class='logo' src="logo.png" alt="logo of my initials">
         <ul>
             <li>Bio |</li>
             <li>Projects  |</li>
@@ -17,46 +19,59 @@
         </ul>
     </nav>
     <header role='hero'>
-        <h1>
-            My name is Samuel Hemby. I’m a developer specializing in HTML, CSS, and JavaScript.
-        </h1>
+        <h1>Samuel Hemby</h1>
+        <p>Web Developer</br> HTML - CSS - JavaScript </p>
     </header>
     <section class='bio' role='bio'>
-        <h3>Bio</h3>
+        <h2>Bio</h2>
             <p>
-                The most beautiful thing about web development is the interplay between 
-                the cold logic of programming and the infinite creative possibilities 
-                of design. My name is Sam and I’ve never been able to choose between 
-                my left and right brain, so I decided to become a developer and 
-                use both. Vision and problem solving have always been my greatest 
-                strengths and I love putting them to work by making complex functions, 
-                algorithms, and beautiful UIs.
+                The most beautiful thing about web development is the interplay between </br>
+                the cold logic of programming and the infinite creative possibilities</br> 
+                of design. My name is Sam and I’ve never been able to choose between </br>
+                my left and right brain, so I decided to become a developer and</br> 
+                use both. Vision and problem solving have always been my greatest</br> 
+                strengths and I love putting them to work by making complex functions, </br>
+                algorithms, and gorgeous UIs.
             </p>
     </section>
     <section class='projects' role='projects'>
         <h2>Projects</h2>
-        <a href='https://github.com/Shemby/quiz-app'>Repo</a>
-        <a href='https://shemby.github.io/quiz-app/'>live</a>
+        <div class='projectContainer'>
+            <div class='image'>
+                <img src="Screenshot.png" class='screenshot' alt="preview of my quiz project">
+                <div class='overlay'></div>
+            </div>
+            <p>Test your knowledge on the world of ice and fire. </br> This quiz asks a few 
+                questions about the TV adapation of "A Song of Ice and Fire"</br> by George R.R. Martin, 
+                titled, "Game of Thrones."
+            </p>
+            <button class='live' href='https://github.com/Shemby/quiz-app'>Repo</button>
+            <button class='repo' href='https://shemby.github.io/quiz-app/'>live</button>
+        </div>
     </section>
     <section class='skills' role='skills'>
-        <h2>Skills</h2>
-        <h3>Languages</h3>
-        <ul class='languages'>
-            <li>HTML5</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-        <h3>Soft Skills</h3>
-        <ul class='soft'>
-            <li>Determined achiever</li>
-            <li>Cooperative team member</li>
-            <li>Quick and willing learner</li>
-            <li>Communicative worker and leader</li>
-        </ul>
+        <div class='skillContainer'>
+            <ul class='technical'>
+                <h2>Technical</h2>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Jquery</li>
+                <li>GitHub</li>
+                <li>GitBash</li>
+            </ul>
+            <ul class='soft'>
+                <h2>Soft Skills</h2>
+                <li>Determined achiever</li>
+                <li>Cooperative team member</li>
+                <li>Quick and willing learner</li>
+                <li>Communicative worker and leader</li>
+            </ul>
+        </div>
 
     </section>
     <footer class='contact' role='contact'>
-        <h3>Contact</h3>
+        <h2>Contact</h2>
         <ul class='contactInfo'>
             <li> <a href='https://github.com/Shemby'>GitHub</a> </li>
             <li> <a href='mailto:hembysam4@gmail.com'>Email</a> </li>
