@@ -26,8 +26,9 @@ h1{
     text-decoration-color:  rgb(255, 252, 70);
 }
 header p{
-    font-style: bold;
     font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 252, 70);
 }
 /*Navigation bar*/
 nav{
@@ -81,6 +82,9 @@ h2{
     color: rgb(54, 53, 53);
     height: 800px;
 }
+.bio .hl{
+    display: none;
+}
 .vl{
     border-left: 6px solid rgb(255, 252, 70);
     height: 200px;
@@ -90,12 +94,16 @@ h2{
     font-size: 20px;
     line-height: 25px;
     font-weight: bolder;
+    width: 30%;
 }
 /*Project section*/
 .projects{
     margin-top: 10%;
     text-align: center;
     height: 1000px;
+}
+.projects p{
+    display: none;
 }
 .imageContainer{
     position: relative;
@@ -221,4 +229,158 @@ footer{
     color: rgb(8, 146, 208);
     text-decoration: underline;
     text-decoration-color: rgb(255, 252, 70);
+}
+
+@media screen and (max-width: 400px){
+    header{
+        height: 750px;
+    }
+    h2{
+        font-size: 80px;
+    }
+    nav{
+        height: 100px;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav li, a{
+        font-size: 20px;
+    }
+    .vl{
+        display:none;
+    }
+    
+    .bio p{
+        font-size: 12px;
+        line-height: 18px;
+        width: 80%;
+    }
+    .bio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bio h2{
+        margin: 10px;
+    }
+    .bio .hl{
+        display: flex;
+        margin: 0;
+    }
+    .projects{
+        height: 700px;
+    }
+    .live, .repo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        width: 75%;
+    }
+    .projects p{
+        width: 75%;
+        text-align: center;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .projects h2{
+        margin: 10px;
+    }
+    .iconContainer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .fifty{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills{
+        height: 2800px;
+    }
+}
+    @media screen and (max-width: 900px){
+        header{
+            height: 750px;
+        }
+        h2{
+            font-size: 80px;
+        }
+        nav{
+            height: 100px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        nav li, a{
+            font-size: 20px;
+        }
+        .vl{
+            display:none;
+        }
+        
+        .bio p{
+            font-size: 18px;
+            line-height: 25px;
+            width: 80%;
+        }
+        .bio{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .bio h2{
+            margin: 10px;
+        }
+        .bio .hl{
+            display: flex;
+            margin: 0;
+        }
+        .projects{
+            height: 700px;
+        }
+        .live, .repo{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            width: 75%;
+        }
+        .projects p{
+            width: 75%;
+            text-align: center;
+            font-size: 15px;
+            margin: auto;
+            margin-top: 15px;
+        }
+        .projects h2{
+            margin: 10px;
+        }
+        .iconContainer p{
+            font-size: 15px;
+            width: 150px;
+        }
+        .iconContainer{
+            display: flex;
+            text-align: center;
+            width: 200px;
+        }
+        .fifty{
+            display: flex;
+        }
+        .skills{
+            height: 2000px;
+        }
 }
