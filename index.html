@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Samuel Hemby</title>
 </head>
 <body>
@@ -46,54 +47,97 @@
         <a name='2'></a>
         <h2>Projects</h2>
         <div class='hl'></div>
-        <div class='projectContainer'>
-            <div class='image'>
-                <img src="Screenshot.png" class='screenshot' alt="preview of my quiz project">
-                <div class='overlay'></div>
-            </div>
-            <p>Test your knowledge on the world of ice and fire. </br> This quiz asks a few 
-                questions about the TV adapation of "A Song of Ice and Fire"</br> by George R.R. Martin, 
-                titled, "Game of Thrones."
-            </p>
-            <button class='live' href='https://github.com/Shemby/quiz-app'>Repo</button>
-            <button class='repo' href='https://shemby.github.io/quiz-app/'>live</button>
+        <div class='imageContainer'>
+                <a href='https://shemby.github.io/quiz-app/'><img class='screenshot' alt="preview of my quiz project" src="Screenshot.png">
+                <a href='https://shemby.github.io/quiz-app/'><div class='overlay'></div></a>
         </div>
+        <button class='live' onclick="window.location.href='https://github.com/Shemby/quiz-app'">Repo</button>
+        <button class='repo' onclick="window.location.href='https://shemby.github.io/quiz-app/'">live</button>
     </section>
     <section class='skills' role='skills'>
         <a name='3'></a>
+        <h3>My Technical Toolkit</h3>
+        <div class='hl'></div>
         <div class='technical'>
-            <h3>My Technical Toolkit</h3>
-            <div class='hl'></div>
-            <ul>
-                <li><img src="https://img.icons8.com/color/48/000000/html-5.png"></li>
-                <li><img src="https://img.icons8.com/color/48/000000/css3.png"></li>
-                <li><img src="https://img.icons8.com/color/48/000000/javascript.png"></li>
-                <li><img src="https://img.icons8.com/ios/50/000000/jquery-filled.png"></li>
-                <li><img src="https://img.icons8.com/color/48/000000/git.png"></li>
-            </ul>
+            <div class='fifty'>
+                <div class='iconContainer'>
+                    <i class="devicon-html5-plain"></i>
+                    <label class='imgLabel'>HTML-5</label>
+                    <p>Semantic HTML to make your website searchable and accessible.</p>
+                </div>
+                <div class='iconContainer'>
+                    <i class="devicon-css3-plain"></i>
+                    <label class='imgLabel'>CSS-3</label>
+                    <p>CSS that creates beautiful, responsive, layouts.</p>
+                </div>
+            </div>
+            <div class='iconContainer'>
+                <i class="devicon-javascript-plain"></i>
+                <label class='imgLabel'>JavaScript</label>
+                <p>JavaScript for fast, dynamic, functionality.</p>
+            </div>
+            <div class='fifty'>
+                <div class='iconContainer'>
+                    <i class="devicon-jquery-plain"></i>
+                    <label class='imgLabel'>JQuery</label>
+                    <p>JQuery that makes JavaScript even more lean and efficient.</p>
+                </div>
+                <div class='iconContainer'>
+                    <i class="devicon-git-plain"></i>
+                    <label class='imgLabel'>Git</label>
+                    <p>Git for version control and collaboration.</p>
+                </div>
+            </div>
         </div>
+        <h3>Soft Skills</h3>
+        <div class='hl'></div>
         <div class='soft'>
-            <h3>Soft Skills</h3>
-            <div class='hl'></div>
-            <ul>
-                <li><img src="https://img.icons8.com/ios/50/000000/trophy.png">Determined achiever</li>
-                <li><img src="https://img.icons8.com/ios/50/000000/groups.png">Cooperative team member</li>
-                <li><img src="https://img.icons8.com/ios/50/000000/learning.png">Quick and willing learner</li>
-                <li><img src="https://img.icons8.com/dotty/80/000000/phone.png">Competent communicator</li>
-            </ul>
+            <div class='fifty'>
+                <div class='iconContainer'>
+                    <img src="https://img.icons8.com/ios/50/000000/trophy.png">
+                    <label class='imgLabel'>Determined Achiever</label>
+                    <p>Grit is my middle name.</p>
+                </div>
+                <div class='iconContainer'>
+                    <img src="https://img.icons8.com/ios/50/000000/groups.png">
+                    <label class='imgLabel'>Collaborator</label>
+                    <p>Teamwork makes the dream work.</p>
+                </div>
+            </div>
+            <div class='iconContainer'>
+                <img src="https://img.icons8.com/ios/50/000000/idea.png">
+                <label class='imgLabel'>Creative Thinker</label>
+                <p>Ideas. I got em.</p>
+            </div>
+            <div class='fifty'>
+                <div class='iconContainer'>
+                    <img src="https://img.icons8.com/ios/50/000000/learning.png">
+                    <label class='imgLabel'>Quick Learner</label>
+                    <p>I should have used a sponge icon.</p>
+                </div> <div class='iconContainer'>
+                    <img src="https://img.icons8.com/dotty/80/000000/phone.png">
+                    <label class='imgLabel'>Competent Communicator</label>
+                    <p>People pick up what I put down.</p>
+                </div>
+            </div>
         </div>
 
     </section>
     <footer class='contact' role='contact'>
         <a name='4'></a>
-        <h2>Contact</h2>
-        <div class='hl'></div>
+        <label>My Links:</label>
         <ul class='contactInfo'>
             <li> <a href='https://github.com/Shemby'><img src="https://img.icons8.com/ios/50/000000/github.png"></a> </li>
             <li> <a href='mailto:hembysam4@gmail.com'><img src="https://img.icons8.com/color/48/000000/gmail.png"></a> </li>
-            <li> <a href=''><img src="https://img.icons8.com/color/48/000000/linkedin.png"></a></li>
+            <li> <a href='https://www.linkedin.com/in/samuel-hemby-985b23185/'><img src="https://img.icons8.com/color/48/000000/linkedin.png"></a></li>
         </ul>
     </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous">
+</script>
+<script src='script.js'></script>
 </div>
 </body>
 </html>
