@@ -272,6 +272,9 @@ footer{
     }
     .projects{
         height: 700px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
     .live, .repo{
         display: flex;
@@ -302,11 +305,11 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    .skills{
-        height: auto;
-    }
+   .skills{
+       height: 3000px;
+   }
 }
-    @media screen and (max-width: 900px){
+    @media screen and (min-width: 400px) and (max-width: 900px){
         header{
             height: 750px;
         }
