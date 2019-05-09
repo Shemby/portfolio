@@ -290,6 +290,9 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .projects h3{
+        font-size: 30px;
+    }
     .live, .repo{
         display: flex;
         flex-direction: column;
@@ -300,7 +303,11 @@ footer{
         margin-top: 25px;
         width: 75%;
     }
-    .projects p{
+    .longDescription{
+        display: none;
+    }
+    .shortDescription{
+        display: block;
         width: 75%;
         text-align: center;
         font-size: 15px;
@@ -375,7 +382,7 @@ footer{
             margin-top: 25px;
             width: 75%;
         }
-        .projects p{
+        .longDescription{
             width: 75%;
             text-align: center;
             font-size: 15px;
