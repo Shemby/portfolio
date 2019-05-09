@@ -303,7 +303,7 @@ footer{
         flex-direction: column;
     }
     .skills{
-        height: 2800px;
+        height: auto;
     }
 }
     @media screen and (max-width: 900px){
