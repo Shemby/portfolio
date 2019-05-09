@@ -102,8 +102,21 @@ h2{
     text-align: center;
     height: 1000px;
 }
-.projects p{
+.projects h3{
+    font-size: 50px;
+    color: rgb(8, 146, 208);
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 252, 70);
+}
+.shortDescription{
     display: none;
+}
+.longDescription{
+    display: block;
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin: auto;
 }
 .imageContainer{
     position: relative;
@@ -114,6 +127,7 @@ h2{
     width: 100%;
     height: auto;
     transition: .5s ease;
+
 }
 .imageContainer:hover .overlay {
     opacity: 1;
