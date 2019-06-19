@@ -11,24 +11,39 @@ body{
     margin: auto;
 }
 /*Header*/
+.videoWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+}
+#fog{
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
 header{
-    background-image: url('https://wallpapercave.com/wp/jsqj2Er.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 860px;
-    padding: 12%;
+    height: 775px;
 }
 h1{
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
-    margin-bottom: 15px;
-    text-decoration: underline;
-    text-decoration-color:  rgb(255, 252, 70);
+    font-weight: lighter;
+    color: white;
+    padding-left: 30%;
+    padding-top: 200px;
+    margin-bottom: 0;
 }
 header p{
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
-    color: rgb(255, 252, 70);
+    color: white;
+    padding-left: 30%;
+    text-decoration: underline;
 }
 /*Navigation bar*/
 nav{
@@ -134,18 +149,13 @@ h2{
     cursor: pointer;
 }
 .overlay{
-    position: absolute; 
-    bottom: 0; 
-    background-color: rgba(8, 146, 208, 0.5);
-    color: #f1f1f1;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    z-index: 2;
 }
 .live, .repo{
     padding: 10px;
