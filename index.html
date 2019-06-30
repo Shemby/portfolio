@@ -11,6 +11,7 @@
 </head>
 <body>
     <header role='hero'>
+        <a name='0'></a>
         <div class='videoWrapper'>
             <div class='overlay'></div>
                 <video id='fog' preload='auto' autoplay='true' loop='loop' muted='muted'>
@@ -19,121 +20,112 @@
                 <!-- <source src='Falling-stars.mov'> -->
                 </video>
         </div>
-        <h1>Samuel Hemby</h1>
-        <p>Front-End Web Developer.</p>
+        <img id='profile' src='images/profile.jpg' alt='profile picture'>
+        <h1>Hello, my name is <span class='name'>Samuel Hemby</span>.</h1>
+        <p>I'm a front-end web developer.</p>
+        <button class='view-my-work'><a href='#1'>View my work &nbsp; <span class='arrow'>&darr;</span></a></button>
     </header>
     <nav role='nav'>
             <ul>
+                <li><a class='home' href='#0'>Home</a></li>
                 <li><a href='#1'>About</a></li>
                 <li><a href='#2'>Projects</a></li>
-                <li><a href='#3'>Skills</a></li>
                 <li><a href='#4'>Contact</a></li>
             </ul>
     </nav>
-<div class='container'>
+    <a name='1'></a>
     <section class='bio' role='bio'>
-        <a name='1'></a>
-        <h2>About</h2>
-        <div class='vl'></div>
-        <div class='hl'></div>
+        <img id='family' src='images/family.JPG' alt='family picture'>
+        <div class='bio-half'>
+            <h2>About Me</h2>
             <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 The most beautiful thing about web development is the interplay between 
                 the cold logic of programming and the infinite creative possibilities
                 of design. My name is Sam and I’ve never been able to choose between 
                 my left and right brain, so I decided to become a developer and
                 use both. Vision and problem solving have always been my greatest
-                strengths and I love putting them to work by coding up both functional
-                and beautiful user interfaces.
+                strengths and I love putting them to work through front end development.
                 </br>
                 </br>
-                When I'm not programming, I'm usually found with my wonderful wife,
-                and our baby boy. We love to have outdoor adventures as a family like
-                camping, hiking, fishing, or hunting. When I'm not with my family I like
-                to run DnD campaigns or play online games with my friends.
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                When I'm not programming, I'm usually found with my beautiful wife and
+                our baby boy. We love to have outdoor adventures as a family like
+                camping, hiking, fishing, or hunting. I also enjoy
+                running DnD campaigns and playing online games with my friends.
             </p>
+            <div class='tool-bar'>
+                <h3>My Technical Toolkit</h3>
+                    <div class='technical'>
+                        <div class='TechContain'>
+                            <i class="devicon-html5-plain"></i>                
+                            <label class='imgLabel'>HTML-5</label>    
+                        </div>
+                        <div class='TechContain'>
+                            <i class="devicon-css3-plain"></i>
+                            <label class='imgLabel'>CSS-3</label>
+                        </div>
+                        <div class='TechContain'>
+                            <i class="devicon-javascript-plain"></i>                
+                            <label class='imgLabel'>JavaScript</label>                
+                        </div>
+                        <div class='TechContain'>
+                            <i class="devicon-jquery-plain"></i>                
+                            <label class='imgLabel'>JQuery</label>                
+                        </div>
+                        <div class='TechContain'>
+                            <i class="devicon-git-plain"></i>                
+                            <label class='imgLabel'>Git</label>                
+                        </div>
+                    </div>
+            </div>
+        </div>
     </section>
     <section class='projects' role='projects'>
-        <a name='2'></a>
-        <h2>Projects</h2>
+            <a name='2'></a>
+            <h2>Projects</h2>
+            <div class='img-contain'>
+                <div id='quiz'>
+                    <img class='ss' src='images/quiz-ss.png' alt='screen shot of quiz app'>
+                    <div id='quiz-over'>
+                        <label>Quiz App</label>
+                        <button class='quiz-btn'><a href ='https://shemby.github.io/quiz-app/'>View Live App</a></button>
+                        <button class='quiz-btn'><a href='https://github.com/Shemby/quiz-app'>View Repository</a></button>
+                    </div>
+                </div>
+                <div id='bible'>
+                    <img class='ss-bible' src='images/bible-ss.png' alt='screen shot of bible app'>
+                    <div id='bible-over'>
+                        <label>Bible API App</label>
+                        <button class='bible-btn'><a href='https://shemby.github.io/BibleAssistant/'>View Live App</a></button>
+                        <button class='bible-btn'><a href='https://github.com/Shemby/BibleAssistant'>View Repository</a></button>
+                    </div>
+                </div>
+            </div>
     </section>
     <section class='skills' role='skills'>
         <a name='3'></a>
-        <h3>My Technical Toolkit</h3>
-        <div class='hl'></div>
-        <div class='technical'>
-            <div class='fifty'>
-                <div class='iconContainer'>
-                    <i class="devicon-html5-plain"></i>
-                    <label class='imgLabel'>HTML-5</label>
-                    <p>Semantic HTML to make your website searchable and accessible.</p>
-                </div>
-                <div class='iconContainer'>
-                    <i class="devicon-css3-plain"></i>
-                    <label class='imgLabel'>CSS-3</label>
-                    <p>CSS that creates beautiful, responsive, layouts.</p>
-                </div>
-            </div>
-            <div class='iconContainer'>
-                <i class="devicon-javascript-plain"></i>
-                <label class='imgLabel'>JavaScript</label>
-                <p>JavaScript for fast, dynamic, functionality.</p>
-            </div>
-            <div class='fifty'>
-                <div class='iconContainer'>
-                    <i class="devicon-jquery-plain"></i>
-                    <label class='imgLabel'>JQuery</label>
-                    <p>JQuery that makes JavaScript even more lean and efficient.</p>
-                </div>
-                <div class='iconContainer'>
-                    <i class="devicon-git-plain"></i>
-                    <label class='imgLabel'>Git</label>
-                    <p>Git for version control and collaboration.</p>
-                </div>
-            </div>
-        </div>
-        <h3>Soft Skills</h3>
-        <div class='hl'></div>
-        <div class='soft'>
-            <div class='fifty'>
-                <div class='iconContainer'>
-                    <img src="https://img.icons8.com/ios/50/000000/trophy.png">
-                    <label class='imgLabel'>Determined Achiever</label>
-                    <p>Grit is my middle name.</p>
-                </div>
-                <div class='iconContainer'>
-                    <img src="https://img.icons8.com/ios/50/000000/groups.png">
-                    <label class='imgLabel'>Collaborator</label>
-                    <p>Teamwork makes the dream work.</p>
-                </div>
-            </div>
-            <div class='iconContainer'>
-                <img src="https://img.icons8.com/ios/50/000000/idea.png">
-                <label class='imgLabel'>Creative Thinker</label>
-                <p>Ideas. I got em.</p>
-            </div>
-            <div class='fifty'>
-                <div class='iconContainer'>
-                    <img src="https://img.icons8.com/ios/50/000000/learning.png">
-                    <label class='imgLabel'>Quick Learner</label>
-                    <p>I should have used a sponge icon.</p>
-                </div> <div class='iconContainer'>
-                    <img src="https://img.icons8.com/dotty/80/000000/phone.png">
-                    <label class='imgLabel'>Competent Communicator</label>
-                    <p>People pick up what I put down.</p>
-                </div>
-            </div>
-        </div>
-
+        
     </section>
     <footer class='contact' role='contact'>
         <a name='4'></a>
-        <label>My Links:</label>
-        <ul class='contactInfo'>
-            <li> <a href='https://github.com/Shemby'><img src="https://img.icons8.com/ios/50/000000/github.png"></a> </li>
-            <li> <a href='mailto:hembysam4@gmail.com'><img src="https://img.icons8.com/color/48/000000/gmail.png"></a> </li>
-            <li> <a href='https://www.linkedin.com/in/samuel-hemby-985b23185/'><img src="https://img.icons8.com/color/48/000000/linkedin.png"></a></li>
-        </ul>
+        <div class='taper'></div>
+        <h2>Shoot Me an Email</h2>
+        <form class='contact-form' action="https://formspree.io/hembysam4@gmail.com" method="POST">
+            <input type='text' name='name' placeholder='Name'>
+            <input type='text' name='mail' placeholder='Your Email'>
+            <input type='text' name='subject' placeholder='Subject'>
+            <textarea name='message' placeholder='Message'></textarea>
+            <button type='submit' name='submit'>Send</button>
+        </form>
+        <div class='contact-links'>
+            <ul class='contactInfo'>
+                <li> <a href='https://github.com/Shemby'><img src="https://cdn0.iconfinder.com/data/icons/octicons/1024/mark-github-256.png"></a> </li>
+                <li> <a href='https://www.facebook.com/hemby.sam'><img src="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/01-256.png"></a> </li>
+                <li> <a href='https://www.linkedin.com/in/samuel-hemby-985b23185/'><img src="https://cdn4.iconfinder.com/data/icons/social-media-line-3/64/Social-media-expand_LinkedIn_LinkedIn-256.png"></a></li>
+            </ul>
+            <a href='#0'><img src='images/chevron.png' id='chevron'></a>
+        </div>
     </footer>
-</div>
 </body>
 </html>
