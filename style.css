@@ -27,8 +27,9 @@ body{
     min-width: 100%;
 }
 header{
-    height: 871px;
+    height: 920px;
     text-align: center;
+    margin: 0;
 }
 .name{
     color: rgb(80, 192, 226);
@@ -71,6 +72,9 @@ header p{
     font-size: 25px;
 }
 /*Navigation bar*/
+.hamburger{
+    display: none;
+}
 nav{
     position: fixed;
     top: 0;
@@ -94,7 +98,7 @@ nav li, a{
     font-size: 20px;
     transition: .25s;
 }
-nav a:hover{
+nav ul a:hover{
     border-top: 2px solid rgb(80, 192, 226);
 }
 .home{
@@ -104,6 +108,9 @@ nav a:hover{
     border-top: 2px solid white;
 }
 /*About section*/
+.sml-scrn{
+    display: none;
+}
 .technical{
     display: flex;
     align-items: center;
@@ -144,13 +151,16 @@ nav a:hover{
     font-size: 50px;
 }
 #family{
-    height: 800px;
+    width: 50%;
+    height: 50%;
 }
 .bio{
     padding: 50px 0 100px 0;
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
     background-color: rgb(54, 53, 53);
+    margin: 0;
 }
 .bio h2{
     font-size: 60px;
@@ -350,166 +360,223 @@ li img{
 #chevron:hover{
     background-color: rgb(80, 192, 226);
 }
-@media screen and (max-width: 400px){
-    header{
-        height: 750px;
-    }
-    h2{
-        font-size: 80px;
-    }
-    nav{
-        height: 100px;
+@media screen and (max-width: 499px){
+    .hamburger{
+        cursor: pointer;
+        color: white;
+        font-size: 30px;
+        padding-right: 20px;
+        display:block;
+        width:100%;
+        text-align:right;
+        margin: 0;
+        height: 60px;
     }
     nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
-    nav li, a{
-        font-size: 20px;
-    }
-    .vl{
-        display:none;
-    }
-    
-    .bio p{
-        font-size: 12px;
-        line-height: 18px;
-        width: 80%;
-    }
-    .bio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .bio h2{
-        margin: 10px;
-    }
-    .bio .hl{
-        display: flex;
+        width: 100%;
+        background-color: rgb(88, 90, 88);
         margin: 0;
+        padding: 0;
+        height: 0;
+        overflow: hidden;
     }
-    .projects{
-        height: 700px;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
+    #links{
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        display: block;
     }
-    .projects h3{
-        font-size: 30px;
+    #links li{
+        display: block;
+        border-bottom: 2px solid white;
+        width: 100%;
+        margin: 0;
+        height: 50px;
+        padding-top: 4px;
+        padding-left: 10px;
     }
-    .live, .repo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 25px;
-        margin-top: 25px;
-        width: 75%;
+    #links li a:hover{
+        border-top: none;
     }
-    .longDescription{
+    #links.open{
+        height: auto;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    header p{
+        font-size: 50px;
+    }
+    #family{
         display: none;
     }
-    .shortDescription{
-        display: block;
-        width: 75%;
-        text-align: center;
-        font-size: 15px;
+    .bio-half{
+        width: 100%;
+        height: 100%;
         margin: auto;
-        margin-top: 15px;
+        float: none;
     }
-    .projects h2{
-        margin: 10px;
+    .bio{
+        background: linear-gradient(0deg,rgba(2, 47, 53, 0.733),rgba(0, 0, 0, 0.712)), url('Images/family.JPG') no-repeat 800px;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+        width: 100%;
     }
-    .iconContainer{
+    .TechContain{
+        background-color: transparent;
+    }
+    .bio p{
+        font-size: 16px;
+        line-height: 22px;
+        border: 1px solid white;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+    .bio h2{
+        font-size: 50px;
+    }
+    .tool-bar{
+        width: 300px;
+    }
+    .technical{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tool-bar h3{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    #bible-over, #quiz-over{
+        display: none;
+    }
+    .img-contain{
         display: flex;
         flex-direction: column;
-        text-align: center;
     }
-    .fifty{
+    #quiz, #bible{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-   .skills{
-       height: 3000px;
-   }
+    .projects{
+        height: 1300px;
+    }
+    .quiz-btn, .bible-btn{
+        margin-top: 20px;
+        background-color: rgb(54, 53, 53);
+        width: 150px;
+    }
+    .img-contain label{
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+    }
+    .sml-scrn{
+        display: flex;
+    }
+    .contact{
+        height: 1150px;
+    }
+    .contact h2{
+        font-size: 45px;
+    }
+    form{
+        width: 300px;
+    }
+    .contactInfo{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
 }
-    @media screen and (min-width: 400px) and (max-width: 900px){
-        header{
-            height: 750px;
-        }
-        h2{
-            font-size: 80px;
-        }
-        nav{
-            height: 100px;
-        }
-        nav ul{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        nav li, a{
-            font-size: 20px;
-        }
-        .vl{
-            display:none;
-        }
-        
-        .bio p{
-            font-size: 18px;
-            line-height: 25px;
-            width: 80%;
-        }
-        .bio{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .bio h2{
-            margin: 10px;
-        }
-        .bio .hl{
-            display: flex;
-            margin: 0;
-        }
-        .projects{
-            height: 700px;
-        }
-        .live, .repo{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            margin-bottom: 25px;
-            margin-top: 25px;
-            width: 75%;
-        }
-        .longDescription{
-            width: 75%;
-            text-align: center;
-            font-size: 15px;
-            margin: auto;
-            margin-top: 15px;
-        }
-        .projects h2{
-            margin: 10px;
-        }
-        .iconContainer p{
-            font-size: 15px;
-            width: 150px;
-        }
-        .iconContainer{
-            display: flex;
-            text-align: center;
-            width: 200px;
-        }
-        .fifty{
-            display: flex;
-        }
-        .skills{
-            height: 2000px;
-        }
+   
+@media screen and (min-width: 500px) and (max-width: 1080px){
+    header h1{
+        font-size: 55px;
+    }
+    header p{
+        font-size: 45px;
+    }
+    #family{
+        display: none;
+    }
+    .bio-half{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        float: none;
+    }
+    .bio{
+        background: linear-gradient(0deg,rgba(2, 47, 53, 0.733),rgba(0, 0, 0, 0.712)), url('Images/family.JPG') no-repeat 800px;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 1000px;
+        width: 100%;
+    }
+    .TechContain{
+        background-color: transparent;
+    }
+    .bio p{
+        font-size: 16px;
+        line-height: 22px;
+        border: 1px solid white;
+        margin-bottom: 10px;
+        width: 360px;
+    }
+    .bio h2{
+        font-size: 50px;
+    }
+    .tool-bar h3{
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    #bible-over, #quiz-over{
+        display: none;
+    }
+    .img-contain{
+        display: flex;
+        flex-direction: column;
+    }
+    #quiz, #bible{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        height: 1300px;
+    }
+    .quiz-btn, .bible-btn{
+        margin-top: 20px;
+        background-color: rgb(54, 53, 53);
+        width: 150px;
+    }
+    .img-contain label{
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+    }
+    .sml-scrn{
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1350px){
+    #famliy{
+        width: 30%;
+        height: 30%;
+    }
+    .bio-half{
+        width: 70%;
+    }
+    .bio p{
+        width: 100%;
+    }
 }

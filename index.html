@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script>
     <title>Samuel Hemby</title>
 </head>
 <body>
@@ -15,9 +18,7 @@
         <div class='videoWrapper'>
             <div class='overlay'></div>
                 <video id='fog' preload='auto' autoplay='true' loop='loop' muted='muted'>
-                <!-- <source src='star-scape.mov'> -->
                 <source src='dense-fog.mp4'>
-                <!-- <source src='Falling-stars.mov'> -->
                 </video>
         </div>
         <img id='profile' src='Images/profile.jpg' alt='profile picture'>
@@ -26,7 +27,8 @@
         <button class='view-my-work'><a href='#1'>View my work &nbsp; <span class='arrow'>&darr;</span></a></button>
     </header>
     <nav role='nav'>
-            <ul>
+            <a class='hamburger' for='toggle'>&#9776;</a>
+            <ul id='links'>
                 <li><a class='home' href='#0'>Home</a></li>
                 <li><a href='#1'>About</a></li>
                 <li><a href='#2'>Projects</a></li>
@@ -86,17 +88,27 @@
             <h2>Projects</h2>
             <div class='img-contain'>
                 <div id='quiz'>
+                    <label class='sml-scrn'>Quiz App</label>
                     <img class='ss' src='Images/quiz-ss.png' alt='screen shot of quiz app'>
                     <div id='quiz-over'>
                         <label>Quiz App</label>
                         <button class='quiz-btn'><a href ='https://shemby.github.io/quiz-app/'>View Live App</a></button>
                         <button class='quiz-btn'><a href='https://github.com/Shemby/quiz-app'>View Repository</a></button>
                     </div>
+                    <div class='sml-scrn'>
+                        <button class='quiz-btn'><a href ='https://shemby.github.io/quiz-app/'>View Live App</a></button>
+                        <button class='quiz-btn'><a href='https://github.com/Shemby/quiz-app'>View Repository</a></button>
+                    </div>
                 </div>
                 <div id='bible'>
+                    <label class='sml-scrn'>Bible API App</label>
                     <img class='ss-bible' src='Images/bible-ss.png' alt='screen shot of bible app'>
                     <div id='bible-over'>
                         <label>Bible API App</label>
+                        <button class='bible-btn'><a href='https://shemby.github.io/BibleAssistant/'>View Live App</a></button>
+                        <button class='bible-btn'><a href='https://github.com/Shemby/BibleAssistant'>View Repository</a></button>
+                    </div>
+                    <div class='sml-scrn'>
                         <button class='bible-btn'><a href='https://shemby.github.io/BibleAssistant/'>View Live App</a></button>
                         <button class='bible-btn'><a href='https://github.com/Shemby/BibleAssistant'>View Repository</a></button>
                     </div>
@@ -124,8 +136,9 @@
                 <li> <a href='https://www.facebook.com/hemby.sam'><img src="https://cdn3.iconfinder.com/data/icons/wpzoom-developer-icon-set/500/01-256.png"></a> </li>
                 <li> <a href='https://www.linkedin.com/in/samuel-hemby-985b23185/'><img src="https://cdn4.iconfinder.com/data/icons/social-media-line-3/64/Social-media-expand_LinkedIn_LinkedIn-256.png"></a></li>
             </ul>
-            <a href='#0'><img src='Images/chevron.png' id='chevron'></a>
+        <a href='#0'><img src='Images/chevron.png' id='chevron'></a>
         </div>
     </footer>
+<script src='nav.js'></script>
 </body>
 </html>
